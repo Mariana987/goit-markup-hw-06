@@ -668,11 +668,11 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrob.is-hidden{
+/* .backdrob.is-hidden{
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
+} */
 
 .backdrob.is-hidden .modal{
   transform: translate(-50%, -50%) scale(1.1);
@@ -710,4 +710,8 @@ button {
   cursor: pointer;
   margin-top: 8px;
   margin-right: 8px;
+  }
+
+  textarea{
+    resize: none;
   }
