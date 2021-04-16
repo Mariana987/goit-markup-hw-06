@@ -352,24 +352,42 @@
           </use>
         </svg>
       </button>
-      <form>
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name">
 
-        <label for="phone-number">Телефон</label>
-        <input type="tel" name="phone-number" id="phone-number">
+      <form class="form">
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="form-field">
+          <label for="name" class="form-label">Имя</label>
+          <svg width="18px" height="18px">
+            <use hreg="./images/icons.svg#person-black"></use>
+          </svg>
+          <input class="form-input" type="text" name="name" id="name">
+        </div>
 
-        <label for="email">Почта</label>
-        <input type="email" name="email" id="email">
+        <div class="form-field">
+          <label class="form-label" for="phone-number">Телефон</label>
+          <input class="form-input" type="tel" name="phone-number" id="phone-number">
+        </div>
 
-        <label for="comment">Комментарий</label>
-        <textarea name="comment" id="comment" rows="10"></textarea>
+        <div class="form-field">
+          <label class="form-label" for="email">Почта</label>
+          <input class="form-input" type="email" name="email" id="email">
+        </div>
 
-        <input type="checkbox" name="accept" id="accept">
-        <label for="accept">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <div class="form-field">
+          <label class="form-label" for="comment">Комментарий</label>
+          <textarea class="form-input comment" name="comment" id="comment" rows="10"
+            placeholder="Введите текст"></textarea>
+        </div>
+
+        <div class="form-checkbox">
+          <input class="form-input" type="checkbox" name="accept" id="accept">
+          <label class="checkbox-label" for="accept">Соглашаюсь с рассылкой и принимаю <a class="form-link"
+              href="">Условия
+              договора</a></label>
+        </div>
 
 
-        <button type="submit">Отправить</button>
+        <button class="send-button" type="submit">Отправить</button>
       </form>
     </div>
   </div>
