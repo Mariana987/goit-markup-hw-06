@@ -844,6 +844,7 @@ button {
   .form-checkbox{
     margin-top: 20px;
     text-align: center;
+    position: relative;
   }
   .checkbox-label{
   font-style: normal;
@@ -859,6 +860,16 @@ button {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
+
+  
+ -webkit-appearance:none;
+ -moz-appearance:none;
+  appearance:none;
+  position: absolute;
+  }
+
+  .checkbox-icon{
+    margin-right: 8px;
   }
 
   .form-link{
